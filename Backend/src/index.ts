@@ -13,7 +13,7 @@ mongoose.connect(process.env.MONGO_URL || "");
 const JWT_PASSWORD = process.env.JWT_SECRET;
 const app = express();
 app.use(cors({
-    origin: "https://brain-link-rho.vercel.app/",
+    origin: "https://brain-link-rho.vercel.app",
    credentials: true
 })) ;
 
