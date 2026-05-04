@@ -48,7 +48,7 @@ export function SideBar({
               <div className="text-cyan-400 size-10">
                 <LogoIcon/>
               </div>
-              <span className="font-semibold tracking-wide ">Brainly</span>
+              <span className="font-semibold tracking-wide ">BrainLink</span>
             </div>
             <button
               onClick={onClose}

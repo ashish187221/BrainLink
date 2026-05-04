@@ -84,7 +84,7 @@ function Dashboard() {
           <div className='inline-flex items-center justify-center w-11 h-11 rounded-2xl bg-slate-900/90 border border-slate-700 text-cyan-300'>
             <LogoIcon className='w-6 h-6' />
           </div>
-          <div className='text-lg font-semibold text-white'>Brainly</div>
+          <div className='text-lg font-semibold text-white'>BrainLink</div>
         </div>
         {!sidebarOpen && <button
           onClick={() => setSidebarOpen((prev) => !prev)}
