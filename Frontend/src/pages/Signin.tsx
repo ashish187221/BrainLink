@@ -30,9 +30,7 @@ export function Signin(){
 
         const jwt = response.data.token;
         localStorage.setItem("token", jwt);
-        if (username) {
-            localStorage.setItem("username", username);
-        }
+        localStorage.setItem("username", response.data.username || username || "User");
         navigate("/dashboard");
     }
 
