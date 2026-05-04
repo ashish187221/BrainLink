@@ -38,3 +38,49 @@ BrainLink is a full-stack web application designed to help users organize, manag
 
     - Authentication : JWT (JSON Web Tokens)
 
+# Folder Structure 🏗️
+
+```
+secondbrainapp/
+├── Backend/          # Contains the server-side code
+│   ├── src/          # Backend source files
+│   ├── .env          # Environment variables for the backend
+│   └── package.json
+├── Frontend/         # Contains the client-side code
+│   ├── src/          # Frontend source files
+│   ├── public/       # Public assets like logos
+│   └── package.json
+└── README.md         # Project documentation
+```
+
+# Installation and Setup ⚙️
+
+- Clone the repository :
+ ```
+ git clone https://github.com/VanshRana-1004/BrainLink.git
+ cd BrainDock
+```
+- Setup Backend :
+```
+ cd Backend
+ npm install
+ npm run dev
+```
+- Setup Frontend :
+```
+ cd ../Frontend
+ npm install
+ npm run dev
+```
+
+# Key Functionalities ✨
+
+- Save and Categorize : Keep your links organized by categories or tags.
+- Explore Shared Brains : Discover resources shared by other users.
+
+# Author 🧑‍💻
+
+- Ashish Rana
+- Github Link : https://github.com/ashish187221/BrainLink
+  
+Let me know if you'd like further refinements!
