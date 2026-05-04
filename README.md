@@ -57,7 +57,7 @@ secondbrainapp/
 
 - Clone the repository :
  ```
- git clone https://github.com/VanshRana-1004/BrainLink.git
+ git clone https://github.com/ashish187221/BrainLink.git
  cd BrainDock
 ```
 - Setup Backend :
