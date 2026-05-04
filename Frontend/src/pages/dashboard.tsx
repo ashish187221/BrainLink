@@ -93,7 +93,8 @@ function Dashboard() {
         </div>
         <div className='flex items-center gap-3'>
           <p className="text-sm sm:text-base md:text-lg font-medium text-slate-300">
-            <span className="font-semibold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            {/* <span className="font-semibold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"> */}
+            <span className="font-semibold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent tracking-wide">
               Hi,{" "}
               {username || "there"}
             </span>
