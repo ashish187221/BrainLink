@@ -43,7 +43,7 @@ export function Signup(){
 
      
     return (
-        <div className="min-h-screen w-screen bg-gradient-to-br from-slate-950 via-slate-900 to-black text-white flex items-center justify-center relative overflow-hidden">
+        <div className="min-h-screen w-screen bg-gradient-to-br from-slate-950 via-slate-900 to-black text-white flex items-center justify-center relative overflow-hidden px-4 sm:px-6">
             <style>{`
                 @keyframes float {
                     0%, 100% { transform: translateY(0px); }
@@ -66,12 +66,11 @@ export function Signup(){
                 <div className="absolute top-10 right-12 w-72 h-72 bg-gradient-to-br from-green-500 to-cyan-500 rounded-full opacity-15 blur-3xl"></div>
                 <div className="absolute bottom-16 left-12 w-72 h-72 bg-gradient-to-br from-purple-500 to-sky-500 rounded-full opacity-15 blur-3xl"></div>
             </div>
-            <div className="relative z-10 glass-effect rounded-[2rem] p-10 w-full max-w-md shadow-2xl border border-white/10">
+            <div className="relative z-10 glass-effect rounded-[2rem] p-6 sm:p-10 w-full max-w-md shadow-2xl border border-white/10">
 
-
-            <div
-                onClick={() => navigate("/")}
-                className="absolute top-4 right-4 p-2 rounded-full cursor-pointer text-slate-400 hover:text-white hover:bg-slate-800/70 transition"
+                <div
+                    onClick={() => navigate("/")}
+                    className="absolute top-4 right-4 p-2 rounded-full cursor-pointer text-slate-400 hover:text-white hover:bg-slate-800/70 transition"
                 >
                     <CrossIcon />
                 </div>
@@ -81,13 +80,13 @@ export function Signup(){
                     <p className="mt-2 text-slate-400">Start sharing secure link wallets in seconds.</p>
                 </div>
 
-                <div className="flex flex-col gap-4 items-center">
+                <div className="flex flex-col gap-4 w-full">
                     <Input ref={usernameRef} placeholder="Username" />
-                    <Input ref={passwordRef} placeholder="Password" />
+                    <Input ref={passwordRef} type="password" placeholder="Password" />
                 </div>
 
-                <div className="pt-6 flex justify-center">
-                    <Button onClick={signup} loading={false} variant="primary" text="Signup" fullWidth={true} />
+                <div className="mt-6 flex justify-center w-full">
+                    <Button onClick={signup} loading={false} variant="primary" text="Sign up" fullWidth={true} />
                 </div>
             </div>
         </div>
