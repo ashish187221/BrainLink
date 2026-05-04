@@ -155,7 +155,7 @@ function Dashboard() {
                     }
                   );
 
-                  const shareUrl = `http://localhost:5173/share/${data.hash}`;
+                  const shareUrl = `https://brain-link-rho.vercel.app/share/${data.hash}`;
                   await navigator.clipboard.writeText(shareUrl);
 
                   showToast("Link copied to clipboard", "success");
