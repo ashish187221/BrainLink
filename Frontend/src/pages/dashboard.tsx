@@ -19,7 +19,8 @@ function Dashboard() {
 
   const [modalOpen, setModalOpen] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const navigate=useNavigate();
+  const [username, setUsername] = useState<string>("");
+  const navigate = useNavigate();
 
   const [filter, setFilter] = useState<
     "all" | "youtube" | "twitter" | "document" | "link" | "tag"
@@ -36,6 +37,10 @@ function Dashboard() {
     refresh();
   }, [modalOpen]);
 
+  useEffect(() => {
+    const storedUsername = localStorage.getItem("username");
+    if (storedUsername) setUsername(storedUsername);
+  }, []);
 
   const handleDeleteClick = (id: string) => {
     setDeleteId(id);
@@ -79,20 +84,25 @@ function Dashboard() {
 
       <SideBar setFilter={setFilter} isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
 
-      <div className='flex items-center justify-between px-4 py-4 border-b border-slate-800 bg-slate-950/90 backdrop-blur-xl sticky top-0 z-20 lg:ml-72'>
-        <div className='flex items-center gap-3 cursor-pointer' onClick={()=>{navigate("/")}}>
+      <div className='flex items-center justify-between gap-4 px-4 py-4 border-b border-slate-800 bg-slate-950/90 backdrop-blur-xl sticky top-0 z-20 lg:ml-72'>
+        <div className='flex items-center gap-3 cursor-pointer' onClick={() => navigate("/") }>
           <div className='inline-flex items-center justify-center w-11 h-11 rounded-2xl bg-slate-900/90 border border-slate-700 text-cyan-300'>
             <LogoIcon className='w-6 h-6' />
           </div>
           <div className='text-lg font-semibold text-white'>BrainLink</div>
         </div>
-        {!sidebarOpen && <button
-          onClick={() => setSidebarOpen((prev) => !prev)}
-          className={`inline-flex items-center justify-center w-12 h-12 rounded-3xl border border-slate-700 bg-slate-900/90 text-slate-100 lg:hidden ${sidebarOpen ? 'hidden' : ''}`}
-          aria-label='Toggle menu'
-        >
-          ☰
-        </button>}
+        <div className='flex items-center gap-3'>
+          <p className='text-sm text-slate-300 whitespace-nowrap'>Hi, {username || "there"}</p>
+          {!sidebarOpen && (
+            <button
+              onClick={() => setSidebarOpen((prev) => !prev)}
+              className='inline-flex items-center justify-center w-12 h-12 rounded-3xl border border-slate-700 bg-slate-900/90 text-slate-100 lg:hidden'
+              aria-label='Toggle menu'
+            >
+              ☰
+            </button>
+          )}
+        </div>
       </div>
 
       <div className='p-4 lg:p-6 min-h-screen lg:ml-72 '>

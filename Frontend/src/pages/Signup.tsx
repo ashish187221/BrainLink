@@ -33,6 +33,9 @@ export function Signup(){
             username,
             password
         });
+        if (username) {
+            localStorage.setItem("username", username);
+        }
         navigate("/signin")
         showToast("User signed up", "success");
     } catch (e: any) {
