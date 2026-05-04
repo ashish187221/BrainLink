@@ -30,7 +30,8 @@ export function Signin(){
 
         const jwt = response.data.token;
         localStorage.setItem("token", jwt);
-        localStorage.setItem("username", response.data.username || username || "User");
+        // localStorage.setItem("username", response.data.username || username || "User");
+        console.log("saving username:", username);
         navigate("/dashboard");
     }
 
