@@ -14,8 +14,6 @@ BrainLink is a full-stack web application designed to help users organize, manag
 
 - Sharing Functionality : Share your stored links and media with others through a unique link.
 
-- Privacy Control : Disable sharing anytime to ensure your content stays private.
-
 - Responsive Design : Enjoy a seamless experience on both desktop and mobile devices.
 
 - User-Friendly Interface : Navigate effortlessly with a clean and intuitive design.
