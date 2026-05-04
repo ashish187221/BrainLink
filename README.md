@@ -4,8 +4,39 @@ BrainLink is a full-stack web application designed to help users organize, manag
 
 🔗 Live Project: https://brain-link-rho.vercel.app/
 
-# <b>Tech Stack</b>
-- Frontend: React.js, Tailwind CSS
-- Backend: Node.js, Express.js
-- Database: MongoDB
-- Deployment: Vercel (Frontend), Render (Backend)
+# Features 🚀
+
+- Content Storage : Save and organize important links in one place for easy access.
+
+- Quick Access : Easily retrieve stored content whenever needed without hassle.
+
+- Tag-Based Organization : Filter content based on defined tags for better organization.
+
+- Sharing Functionality : Share your stored links and media with others through a unique link.
+
+- Privacy Control : Disable sharing anytime to ensure your content stays private.
+
+- Responsive Design : Enjoy a seamless experience on both desktop and mobile devices.
+
+- User-Friendly Interface : Navigate effortlessly with a clean and intuitive design.
+
+# Tech Stack 🛠️
+
+- Frontend
+
+    - Framework : React with TypeScript
+
+    - Styling : Tailwind CSS
+
+    - State Management : Axios library and local storage
+
+    - Build Tool : Vite
+
+- Backend
+
+    - Framework : Node.js with Express
+
+    - Database : MongoDB for data storage
+
+    - Authentication : JWT (JSON Web Tokens)
+
