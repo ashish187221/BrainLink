@@ -92,7 +92,12 @@ function Dashboard() {
           <div className='text-lg font-semibold text-white'>BrainLink</div>
         </div>
         <div className='flex items-center gap-3'>
-          <p className='text-sm text-slate-300 whitespace-nowrap'>Hi, {username || "there"}</p>
+          <p className="text-sm sm:text-base md:text-lg font-medium text-slate-300">
+            Hi,{" "}
+            <span className="font-semibold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+              {username || "there"}
+            </span>
+          </p>
           {!sidebarOpen && (
             <button
               onClick={() => setSidebarOpen((prev) => !prev)}
