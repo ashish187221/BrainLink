@@ -5,7 +5,7 @@ BrainLink is a full-stack web application designed to help users organize, manag
 🔗 Live Project: https://brain-link-rho.vercel.app/
 
 # <b>Tech Stack</b>
-Frontend: React.js, Tailwind CSS
-Backend: Node.js, Express.js
-Database: MongoDB
-Deployment: Vercel (Frontend), Render (Backend)
+- Frontend: React.js, Tailwind CSS
+- Backend: Node.js, Express.js
+- Database: MongoDB
+- Deployment: Vercel (Frontend), Render (Backend)
