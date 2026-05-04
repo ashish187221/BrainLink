@@ -20,7 +20,7 @@ export function Signin(){
     }, [navigate]);
 
     async function signin(){
-        const username = usernameRef.current?.value;
+        const username = usernameRef.current?.value || "User";
         const password = passwordRef.current?.value;
 
         const response = await axios.post(BACKEND_URL + "/api/v1/signin", {
@@ -30,8 +30,8 @@ export function Signin(){
 
         const jwt = response.data.token;
         localStorage.setItem("token", jwt);
-        // localStorage.setItem("username", response.data.username || username || "User");
-        console.log("saving username:", username);
+        localStorage.setItem("username", response.data.username || username || "User");
+        
         navigate("/dashboard");
     }
 
